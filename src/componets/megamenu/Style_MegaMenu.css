@@ -1,0 +1,73 @@
+.navmenu{
+  width: 100%;
+  background-color: #0060b0;
+  float: left;
+}
+
+.navmenu ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.navmenu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-size: 14px;
+  font-family: Helvetica;
+}
+
+.navmenu ul li a:hover{
+  background-color: burlywood;
+  color: brown;
+  transition: background 0.5s linear;
+}
+
+/* mega menu */
+.navmenu ul li ul.megamenu{
+  width: 60%;
+  padding: 20px;
+  background-color: burlywood;
+  position: absolute;
+  display: none;
+  z-index: 200;
+}
+
+.navmenu ul li:hover ul.megamenu{
+  display: block;
+
+}
+
+.navmenu ul li:hover ul.megamenu li {
+  max-width: 180px;
+  margin-right: 40px;
+  float: left;
+
+}
+
+.navmenu ul li:hover ul.megamenu li a{
+  padding: 10px;
+  color: brown;
+
+}
+
+.navmenu ul li:hover ul.megamenu li a:hover{
+  background-color: brown; 
+  color: coral;
+}
+
+.navmenu ul li:hover ul.megamenu li h1{
+  padding: 10px 0px;
+  font-size: 18px;
+  color: brown;
+  text-align: left;
+  margin-left: 5px;
+  border-bottom: 1px solid brown;
+}
+
+.navmenu ul li:hover ul.megamenu p{
+  color: brown;
+  margin: 5px;
+  padding: 5px;
+}
